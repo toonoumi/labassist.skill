@@ -1,12 +1,24 @@
 ---
 name: labassist
-description: Use when the user wants to develop a roll of black and white film — asking for development parameters, times, dilutions, or a "recipe" for a given film stock and developer (optionally pushed or pulled N stops). Produces a complete step-by-step table (developer, stop, fix, wash) with times, temperatures, dilutions, and agitation.
+description: Use when the user wants to develop black and white film or prints — asking for development parameters, times, dilutions, or a "recipe" for a given film stock and developer (optionally pushed or pulled N stops), or for a paper/print developer. Produces a complete step-by-step table (developer, stop, fix, wash) with times, temperatures, dilutions, and agitation.
 ---
 
-# B&W Film Development Assistant
+# B&W Development Assistant
 
-Give the user a complete, practical development recipe for a roll of black
-and white film, as a table they can tape to the wall of the darkroom.
+Give the user a complete, practical development recipe — for a roll of
+black and white film, or for a print in the darkroom — as a table they can
+tape to the wall.
+
+## Step 0 — film or paper?
+
+If the request is about developing a **print** (paper, enlarger, "print
+developer" by name like Dektol/Multigrade/Selectol/LPD, RC vs fiber), use
+`references/paper-developers.md` instead of the film workflow below — look
+up the developer/dilution, pick RC or fiber time, and output that file's
+process table directly. Paper has no push/pull and no reel agitation math;
+don't apply Steps 1-3 below to it.
+
+Otherwise, assume film and continue.
 
 ## Step 1 — identify the parameters
 
