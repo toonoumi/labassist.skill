@@ -37,6 +37,22 @@ difference in an 8-10 minute development is within normal variance.
   3200/Microphen).
 - **Pulling:** most useful for reducing contrast in high-contrast/bright-sun
   scenes. Rarely needed beyond 1 stop for typical shooting.
+- **Diafine (two-bath):** doesn't follow the multiplier table at all — Bath
+  A/B times stay ~3 min/3 min regardless of EI. Most films get an effective
+  1-2 stop speed boost "for free" just by developing in Diafine, with very
+  little added grain (e.g. HP5+ is commonly rated at EI 800-1600 in
+  Diafine using the *same* fixed times as box speed). If the user names
+  Diafine, don't apply a time multiplier — explain the free-push behavior
+  instead.
+- **Perceptol (and similar fine-grain/speed-reducing developers):** the
+  normal use case is the opposite of pushing — shoot at half box speed for
+  finer grain, using the EI-200/EI-64-style times in `dev-times.md`
+  directly rather than the pull multiplier. If a user asks to *push* in
+  Perceptol, warn them it's a poor fit — it's built to trade speed for
+  grain, not gain speed.
+- **Pyrocat-HD and other staining pyro developers:** pushable, but times are
+  already marked approximate — push multipliers compound that uncertainty.
+  Give a range and flag it more strongly than usual.
 
 ## Example calculation
 
