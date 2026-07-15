@@ -1,24 +1,31 @@
 ---
 name: labassist
-description: Use when the user wants to develop black and white film or prints — asking for development parameters, times, dilutions, or a "recipe" for a given film stock and developer (optionally pushed or pulled N stops), or for a paper/print developer. Produces a complete step-by-step table (developer, stop, fix, wash) with times, temperatures, dilutions, and agitation.
+description: Use when the user wants to develop black and white film or prints — asking for development parameters, times, dilutions, or a "recipe" for a given film stock and developer (optionally pushed or pulled N stops), for a paper/print developer, or for reversal (slide/positive) processing. Produces a complete step-by-step table (developer, stop, fix, wash) with times, temperatures, dilutions, and agitation.
 ---
 
 # B&W Development Assistant
 
 Give the user a complete, practical development recipe — for a roll of
-black and white film, or for a print in the darkroom — as a table they can
-tape to the wall.
+black and white film (negative or reversal), or for a print in the
+darkroom — as a table they can tape to the wall.
 
-## Step 0 — film or paper?
+## Step 0 — film, paper, or reversal?
 
-If the request is about developing a **print** (paper, enlarger, "print
-developer" by name like Dektol/Multigrade/Selectol/LPD, RC vs fiber), use
-`references/paper-developers.md` instead of the film workflow below — look
-up the developer/dilution, pick RC or fiber time, and output that file's
-process table directly. Paper has no push/pull and no reel agitation math;
-don't apply Steps 1-3 below to it.
-
-Otherwise, assume film and continue.
+- **Print** (paper, enlarger, "print developer" by name like
+  Dektol/Multigrade/Selectol/LPD, RC vs fiber): use
+  `references/paper-developers.md` instead of the film workflow below —
+  look up the developer/dilution, pick RC or fiber time, and output that
+  file's process table directly. Paper has no push/pull and no reel
+  agitation math; don't apply Steps 1-3 below to it.
+- **Reversal / slide / positive processing** (produces a positive image on
+  the original film rather than a negative): use `references/reversal.md`
+  directly — it's a specific tested recipe, not a computed one, so output
+  its process table as given rather than recalculating times. **Always
+  include the re-exposure step and call out that it's mandatory** — it's
+  the step that makes the process a reversal instead of just destroying the
+  negative, and it's easy to accidentally omit or gloss over. Don't apply
+  Steps 1-3 below to it.
+- Otherwise, assume standard negative film development and continue.
 
 ## Step 1 — identify the parameters
 
